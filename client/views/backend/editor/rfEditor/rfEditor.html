@@ -1,0 +1,25 @@
+<template name="rfEditor">
+	<div id="rf-editor" class="right">
+		<div id="rf-editor-main">
+			{{> editorMain}}
+		</div>
+		
+		{{> editorOptions}}
+		
+		<div id="rf-editor-footer">
+			{{> editorFooter}}
+		</div>
+	</div><!-- rf-layout-right -->
+</template>
+
+<template name="editorMain">
+	{{> rfEditorMain}}
+</template>
+
+<template name="editorOptions">
+	{{> rfEditorOptions}}
+</template>
+
+<template name="editorFooter">
+	{{> rfEditorFooter}}
+</template>

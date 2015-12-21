@@ -1,0 +1,51 @@
+<template name="rfEditorMainElements">
+	<div class="col-xs-12 text-center push-down-10">
+		<h3><b>Elements</b></h3><br>
+	</div>
+	<div class="col-xs-12">
+		<div class="input-group">
+			<input type="search" class="form-control" placeholder="Search for...">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">
+				<i class="fa fa-search"></i> Search
+			</button>
+			</span>
+		</div>
+		<br>
+	</div>   
+	<div class="col-xs-12 text-center">
+		<div id="block-presets" class="elements row">
+			{{> preset}}
+		</div>
+		<div id="block-components" class="elements row">
+			{{> component}}
+			{{> component}}
+		</div>
+	</div>   
+</template>
+
+<template name="preset">
+	<div class="col-xs-12 draggable">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h3 class="panel-title">Preset</h3>
+		</div>
+		<div class="panel-body">
+			<h1><i class="fa fa-info-circle"></i></h1>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="component">
+	<div class="col-xs-6 draggable">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Component</h3>
+			</div>
+			<div class="panel-body">
+				<a href="#"><h1><i class="fa fa-info-circle"></i></h1></a>
+			</div>
+		</div>
+	</div>
+</template>

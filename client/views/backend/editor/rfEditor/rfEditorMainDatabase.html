@@ -1,0 +1,42 @@
+<template name="rfEditorMainDatabase">
+	<div class="col-xs-12 text-center">
+		<h3><b>Database</b></h3><br>
+	</div>
+	<div class="col-xs-12">
+		<div class="input-group">
+			<input type="search" class="form-control" placeholder="Search for...">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">
+				<i class="fa fa-search"></i> Search
+			</button>
+			</span>
+		</div>
+		<br>
+	</div>       
+	<ul id="block-sections">
+		{{> rfEditorDatabaseTables}}
+	</ul>
+</template>
+
+<template name="rfEditorDatabaseTables">
+	<li class="col-xs-12 block-section">
+		<div class="panel panel-default">
+			<div class="panel-body col-xs-10">
+				<a href="#">dbTable: <b>Name</b></a>
+			</div>
+			<ul class="panel-action col-xs-2">
+				<li>
+					<a href="#">
+						<i class="fa fa-copy"></i>
+					</a>
+				</li>            
+				<li>
+					<a href="#">
+						<i class="fa fa-trash-o"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	</li>
+</template>

@@ -1,5 +1,5 @@
 
-#rf-layout-main {
+#rf-editor-preview {
   background: #f5f5f5;
   height: 100%;
   overflow-y: auto;
@@ -24,25 +24,32 @@
 .rf-view-sm { width: 481px; }
 .rf-view-xs { width: 320px; }
 
-#rf-layout-right {
+#rf-editor {
   background: white;
-  float: right;
-  border-left: 1px solid #ccc;
   width: 300px;
   height: 100%;
   overflow-y: auto;
   padding-bottom: 40px;
   z-index: 999;
 }
-#rf-layout-right-options {
+#rf-editor.right {
+  float: right;
+  border-left: 1px solid #ccc;
+}
+#rf-editor.left {
+  float: left;
+  border-right: 1px solid #ccc;
+}
+#rf-editor-options {
   border-top: 1px solid #ccc;
   height: 150px;
   padding: 5px;
   bottom: 30px;
   position: absolute;
   background: white;
+  width: 299px;
 }
-#rf-layout-right-footer {
+#rf-editor-footer {
   border-top: 1px solid #ccc;
   height: 40px;
   padding: 2px;
@@ -64,16 +71,20 @@
   color: #ccc;
   border-left: 1px solid #ccc;
 }
+
 .elements > div[class^="col"]{padding-left:10px; padding-right:10px;}
 .elements.row { margin: 10px -10px; }
 .max-width-100 { max-width: 100%; }
 .push-down-10 { margin-top: 10px; }
+
 #block-sections > li { 
   height: 65px; 
 }
+
 #block-dbtable > li { 
   height: 65px; 
 }
+
 @media (max-width: 768px) {
   .nav-justified > li {
     display: table-cell;
